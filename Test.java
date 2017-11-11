@@ -2,8 +2,8 @@ import java.util.List;
 import com.sherwin.profile.ProfileBuilder;
 import com.sherwin.build.bean.Build;
 import com.sherwin.otd.commands.ConfigurationCommands;
-import org.python.util.InteractiveInterpreter;
-import weblogic.management.scripting.utils.WLSTInterpreter;
+//import org.python.util.InteractiveInterpreter;
+//import weblogic.management.scripting.utils.WLSTInterpreter;
 
 
 public class Test {
@@ -16,12 +16,12 @@ public class Test {
 		buildprop_array[1] = one.getApplications().toString();
         buildprop_array[2] = one.getClass().toString();
         buildprop_array[3] = one.getTags().toString();	
-        /*System.out.println(one.getActions());
+        System.out.println(one.getActions());
 	    System.out.println(one.getApplications());
 	    System.out.println(one.getClass());
-	    System.out.println(one.getTags());*/
+	    System.out.println(one.getTags());
 		//ConfigurationCommands configurationCommands = new ConfigurationCommands();
-
+/*
 		System.out.println("********************************");
 	    InteractiveInterpreter interpreter = new WLSTInterpreter();    
 	    
@@ -32,7 +32,7 @@ public class Test {
 			System.out.println(command);
     		interpreter.exec(command);
 
-		}		
+		}	*/	
 	}
 
 }
