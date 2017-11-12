@@ -1,4 +1,5 @@
 import java.util.List;
+import java.io.*;
 import com.sherwin.profile.ProfileBuilder;
 import com.sherwin.build.bean.Build;
 import com.sherwin.otd.commands.ConfigurationCommands;
@@ -20,6 +21,8 @@ public class Test {
 	    System.out.println(one.getApplications());
 	    System.out.println(one.getClass());
 	    System.out.println(one.getTags());
+		PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
+                System.setOut(out);
 		//ConfigurationCommands configurationCommands = new ConfigurationCommands();
 /*
 		System.out.println("********************************");
