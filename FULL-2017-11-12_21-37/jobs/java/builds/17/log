@@ -1,0 +1,24 @@
+Started by user [8mha:////4BM9UWfXaeIlwj9SRCgwFEzOGAiKkRNXYc3NhmcRAmACAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZB/dLi1CL97NTijMSyytSiokQAoW5rVMYAAAA=[0mKeshav Yerra
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/java
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/keshavyerra/OTD # timeout=10
+Fetching upstream changes from https://github.com/keshavyerra/OTD
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/keshavyerra/OTD +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b9d05952bb64a511cef82fe518e8f4d632126f61 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b9d05952bb64a511cef82fe518e8f4d632126f61
+Commit message: "Update Test.java"
+ > git rev-list 2d28d43d03e513389729f7e406ee7b2a07a4efa3 # timeout=10
+[java] $ /bin/sh -xe /tmp/jenkins2350981057493665009.sh
++ javac -cp .:/var/jenkins_home/workspace/java/OTDConfigAdapter.jar:/var/jenkins_home/workspace/java/snakeyaml-1.8.jar Test.java
+Test.java:25: error: unreported exception FileNotFoundException; must be caught or declared to be thrown
+            FileOutputStream fos = new FileOutputStream(file);
+                                   ^
+1 error
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
