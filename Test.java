@@ -21,7 +21,7 @@ public class Test {
 	    System.out.println(one.getApplications());
 	    System.out.println(one.getClass());
 	    System.out.println(one.getTags());
-		PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
+		PrintStream out = new PrintStream(new FileOutputStream("/var/jenkins_home/workspace/java/output.txt"));
                 System.setOut(out);
 		//ConfigurationCommands configurationCommands = new ConfigurationCommands();
 /*
