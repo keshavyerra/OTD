@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
-# Hello world python program
+print "Contents of Java Output are:\n";
 
-print "Hello World!";
+f = open('out.txt')
+for line in iter(f):
+    print line
+f.close()
