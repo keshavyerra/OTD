@@ -21,10 +21,7 @@ public class Test {
 	    System.out.println(one.getApplications());
 	    System.out.println(one.getClass());
 	    System.out.println(one.getTags());
-            File file = new File("out.txt"); //Your file
-            FileOutputStream fos = new FileOutputStream(file);
-            PrintStream ps = new PrintStream(fos);
-            System.setOut(ps);
+            
 		//ConfigurationCommands configurationCommands = new ConfigurationCommands();
 /*
 		System.out.println("********************************");
